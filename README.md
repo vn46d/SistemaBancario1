@@ -1,29 +1,27 @@
-# 🏦 Sistema Bancário
+# Sistema Bancário
 
-Projeto desenvolvido em **Java** com o objetivo de praticar lógica de programação, estruturas de decisão, laços de repetição e manipulação de dados.
+Projeto desenvolvido em Java durante meus estudos para praticar lógica de programação e os conceitos básicos da linguagem.
 
-## 📋 Funcionalidades
+## Funcionalidades
 
-- 👤 Cadastro do titular da conta
-- 💰 Consulta de saldo
-- ➕ Depósito
-- ➖ Saque com validação de saldo
-- 🔄 Transferência
-- ❌ Tratamento para operações inválidas
-- 🔁 Menu interativo utilizando `while`
-- 🚪 Encerramento do sistema pela opção "Sair"
+- Cadastro do titular
+- Consulta de saldo
+- Depósito
+- Saque com validação de saldo
+- Transferência
+- Menu interativo
+- Opção para sair do sistema
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias
 
 - Java
 - IntelliJ IDEA
 - Git
 - GitHub
 
-## ▶️ Como executar
+## Como executar
 
-1. Clone este repositório:
-
+1. Clone o repositório:
 ```bash
 git clone https://github.com/vn46d/SistemaBancario1.git
 ```
@@ -32,61 +30,26 @@ git clone https://github.com/vn46d/SistemaBancario1.git
 
 3. Execute a classe `Dados`.
 
-4. Informe o nome do titular e utilize o menu para realizar as operações.
+## O que pratiquei
 
-## 💻 Exemplo de uso
-
-```
-======= Banco Do Vinicius ========
-
-Digite seu nome:
-Vinicius
-
-Bem-vindo, Vinicius!
-
-1 - Ver Saldo
-2 - Depositar
-3 - Sacar
-4 - Transferir
-5 - Sair
-
-Escolha uma opção: 2
-
-Digite o valor do depósito:
-150
-
-Depósito realizado com sucesso!
-Saldo atual: R$ 150.0
-```
-
-## 📚 Conceitos praticados
-
-- Variáveis
 - Scanner
-- Entrada e saída de dados
-- Estruturas condicionais (`if` e `else`)
-- Switch Case
+- Variáveis
+- Estruturas de decisão (`if` e `switch`)
 - Laço de repetição (`while`)
 - Operadores matemáticos
-- Validação de dados
 - Lógica de programação
 
-## 🎯 Objetivo
+## Melhorias futuras
 
-Este projeto foi desenvolvido durante meus estudos de Java para fortalecer os fundamentos da linguagem e praticar a criação de aplicações no terminal utilizando lógica de programação.
+- Organizar o código utilizando métodos
+- Criar uma classe para representar a conta bancária
+- Adicionar histórico de operações
+- Conectar o sistema a um banco de dados
 
-## 🚀 Próximas melhorias
+## Autor
 
-- [ ] Refatorar utilizando métodos
-- [ ] Criar uma classe `ContaBancaria`
-- [ ] Histórico de operações
-- [ ] Cadastro de múltiplas contas
-- [ ] Persistência dos dados em arquivo
-- [ ] Integração com banco de dados
+Vinícius Alves
 
-## 👨‍💻 Autor
+GitHub: https://github.com/vn46d
 
-**Vinicius Alves**
-
-- GitHub: https://github.com/vn46d
-- LinkedIn: https://www.linkedin.com/in/vinicius-alves-507588265
+LinkedIn: https://www.linkedin.com/in/vinicius-alves-507588265
