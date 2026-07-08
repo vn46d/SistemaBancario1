@@ -2,105 +2,75 @@ package Banco;
 
 import java.util.Scanner;
 
-public class Dados {
-    public static void main(String[] args) {
+    public class Dados {
 
-        System.out.println(" ======= Banco Do Vinicius ======== ");
+        public static void main(String[] args) {
 
-        Scanner option = new Scanner(System.in);
+            Scanner option = new Scanner(System.in);
+            Conta conta = new Conta();
 
-        String simounao;
-        String nomedoTitular;
-        String sel;
-        Double saldo;
-        Double deposito;
-        Double sacar;
-        Double transferir;
-        boolean executando = true;
+            System.out.print("Seja Bem-vindo ao BancoVlux,digite seu nome: ");
+            conta.setTitular(option.nextLine());
 
-        deposito = 0.0;
-        saldo = 0.0;
-        sacar = 0.0;
-        transferir = 0.0;
+            System.out.println("Bem-vindo, " + conta.getTitular());
 
-        System.out.println("Digite seu nome: ");
-        nomedoTitular = option.nextLine();
+            boolean executando = true;
 
-        System.out.println("Bem-Vindo ," + nomedoTitular + "!");
-
-        while (executando) {
-        System.out.println("Digite uma dos numeros :" +
-
-                 "1 - Ver Saldo" +
-                 "2 - Depositar" +
-                 "3 - Sacar" +
-                 "4 - Transferir" +
-                 "5 - Sair ");
+            while (executando) {
+                Menu.mostrarMenu();
+                String sel = option.nextLine();
 
 
-        sel = option.nextLine();
+                switch (sel) {
 
-            switch (sel) {
-
-                case "1":
-                    System.out.println("O valor e de R$:" + saldo);
-                    System.out.println("Saldo atualizado: R$ " + saldo);
-                    break;
-
-                case "2":
-                    System.out.println("Digite o valor do depósito:");
-                    deposito = option.nextDouble();
-                    option.nextLine();
-                    saldo = saldo + deposito;
-                    System.out.println("O saldo adicionado a sua conta foi de" + deposito);
-                    System.out.println("Saldo atual: R$ " + saldo);
-                    break;
-
-                case "3":
-                    System.out.println("Digite o Valor do saque:"  );
-                    sacar = option.nextDouble();
-                    option.nextLine();
-                    System.out.println("Saldo atual: R$ " + saldo);
-
-                    if (saldo >= sacar) {
-                        saldo = saldo - sacar;
-                        System.out.println("Restante" + saldo);
-                    } else {
-                        System.out.println("Saldo insuficiente");
+                    case "1":
+                        System.out.println("Saldo: R$ " + conta.getSaldo());
                         break;
-                    }
 
-                case "4":
-                    System.out.println("Digite o valor da transferencia ");
-                    transferir = option.nextDouble();
-                    option.nextLine();
+                    case "2":
 
-                    System.out.println("Mandar para contato frequente?"+
-                            "S/N");
-                    simounao = option.nextLine();
-                    if(simounao.equalsIgnoreCase("S"));{
-                    System.out.println("tal coisa");
+                        System.out.print("Valor do depósito: ");
+                        double deposito = option.nextDouble();
+                        option.nextLine();
+
+                        conta.depositar(deposito);
+                        break;
+
+                    case "3":
+
+                        System.out.print("Valor do saque: ");
+                        double saque = option.nextDouble();
+                        option.nextLine();
+
+                        conta.sacar(saque);
+                        break;
+
+                    case "4":
+
+                        System.out.print("Valor da transferência: ");
+                        double transferencia = option.nextDouble();
+                        option.nextLine();
+
+                        conta.transferir(transferencia);
+                        break;
+
+                    case "5":
+
+                        executando = false;
+
+                        System.out.println("Obrigado por utilizar o Banco do Vinicius!");
+                        break;
+
+                    default:
+
+                        System.out.println("Opção inválida.");
+
                 }
-                    System.out.println("Saindo,obrigado por ultilizar nossos serviços.");
 
-                    System.out.println("Saldo atual: R$ " + saldo);
-
-                    if (saldo >= transferir) {
-                        saldo = saldo - transferir;
-                        System.out.println("Saldo Restante" + saldo);
-                    } else {
-                        System.out.println("Saldo insuficiente");
-                        break;
-                    }
-                default:
-                        System.out.println("Operação inválida");
-                        break;
-
-                case "5":
-                    executando = false;
-                    System.out.println("Saindo,obrigado por ultilizar nossos serviços.");
-                    break;
             }
+
+            option.close();
+
         }
+
     }
-}
