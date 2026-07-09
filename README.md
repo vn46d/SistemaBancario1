@@ -1,18 +1,18 @@
 # Sistema Bancário
 
-Projeto desenvolvido em Java durante meus estudos para praticar lógica de programação e os conceitos básicos da linguagem.
+Projeto desenvolvido em Java durante meus estudos para praticar lógica de programação e Programação Orientada a Objetos (POO).
 
 ## Funcionalidades
 
 - Cadastro do titular
 - Consulta de saldo
-- Depósito
+- Depósito com validação de valor
 - Saque com validação de saldo
 - Transferência
 - Menu interativo
-- Opção para sair do sistema
+- Opção para encerrar o sistema
 
-## Tecnologias
+## Tecnologias utilizadas
 
 - Java
 - IntelliJ IDEA
@@ -22,33 +22,30 @@ Projeto desenvolvido em Java durante meus estudos para praticar lógica de progr
 ## Como executar
 
 1. Clone o repositório:
+
 ```bash
 git clone https://github.com/vn46d/SistemaBancario1.git
 ```
 
 2. Abra o projeto no IntelliJ IDEA.
 
-3. Execute a classe `Dados`.
+3. Execute a classe `Main`.
 
 ## O que pratiquei
 
+- Programação Orientada a Objetos (POO)
+- Classes e Objetos
+- Encapsulamento
+- Métodos
 - Scanner
-- Variáveis
 - Estruturas de decisão (`if` e `switch`)
 - Laço de repetição (`while`)
 - Operadores matemáticos
 - Lógica de programação
 
-## Melhorias futuras
-
-- Organizar o código utilizando métodos
-- Criar uma classe para representar a conta bancária
-- Adicionar histórico de operações
-- Conectar o sistema a um banco de dados
-
 ## Autor
 
-Vinícius Alves
+**Vinicius Alves**
 
 GitHub: https://github.com/vn46d
 

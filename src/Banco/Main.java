@@ -2,14 +2,16 @@ package Banco;
 
 import java.util.Scanner;
 
-    public class Dados {
+    public class Main {
 
         public static void main(String[] args) {
 
             Scanner option = new Scanner(System.in);
             Conta conta = new Conta();
 
-            System.out.print("Seja Bem-vindo ao BancoVlux,digite seu nome: ");
+            System.out.print("=======  Seja bem-vindo ao BancoVlux  =======");
+            System.out.println();
+            System.out.println("Digite seu nome:");
             conta.setTitular(option.nextLine());
 
             System.out.println("Bem-vindo, " + conta.getTitular());
@@ -58,7 +60,7 @@ import java.util.Scanner;
 
                         executando = false;
 
-                        System.out.println("Obrigado por utilizar o Banco do Vinicius!");
+                        System.out.println("Obrigado por utilizar o BancoVlux!");
                         break;
 
                     default:
